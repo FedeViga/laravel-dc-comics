@@ -11,7 +11,7 @@
         <div class="list-group">
 
             @foreach($comics as $comic)
-            <a href="" class="list-group-item list-group-item-action" aria-current="true">
+            <a href="{{route('comics.show', $comic->id)}}" class="list-group-item list-group-item-action" aria-current="true">
               {{$comic->title}}
             </a>
             @endforeach
