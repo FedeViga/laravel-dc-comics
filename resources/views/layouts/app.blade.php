@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,10 @@
     @vite('resources/js/app.js')
 </head>
 <body>
+
+    <h1 class="text-center py-4">
+        Laravel DC Comics
+    </h1>
 
 @yield('content')
     
