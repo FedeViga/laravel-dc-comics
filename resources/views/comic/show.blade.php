@@ -4,9 +4,15 @@
 
     <div class="container">
 
-        <h2>
-            {{$comic->title}}
-        </h2>
+        <div class="comic text-center">
+            <h2>
+                {{$comic->title}}
+            </h2>
+            <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
+            <p>
+                {{$comic->description}}
+            </p>
+        </div>
 
     </div>
 
