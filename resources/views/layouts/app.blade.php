@@ -12,7 +12,7 @@
 
 @include('partials/nav')
 
-    <h1 class="text-center py-4">
+    <h1 class="text-center">
         Laravel DC Comics
     </h1>
 
