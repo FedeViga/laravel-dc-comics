@@ -36,8 +36,13 @@
                             Writers: {{$comic->writers}}
                         </li>
                     </ul>
-                    <div class="text-center">
+                    <div class="d-flex justify-content-center gap-2">
                         <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-outline-warning">Edit</a>
+                        <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-outline-danger">Delete</button>
+                        </form>
                     </div>
                 </div>
             </div>
