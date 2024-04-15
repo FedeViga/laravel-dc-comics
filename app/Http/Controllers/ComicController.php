@@ -115,6 +115,24 @@ class ComicController extends Controller
             'type' =>'required|max:50',
             'artists' =>'required|max:1000',
             'writers' =>'required|max:1000'
+        ], [
+            'title.required' => 'Il campo ":attribute" deve essere riempito.',
+            'title.max' => 'Il campo ":attribute" può avere una lunghezza massima di :max caratteri.',
+            'description.required' => 'Il campo ":attribute" deve essere riempito.',
+            'description.max' => 'Il campo ":attribute" può avere una lunghezza massima di :max caratteri.',
+            'thumb.required' => 'Il campo ":attribute" deve essere riempito.',
+            'thumb.max' => 'Il campo ":attribute" può avere una lunghezza massima di :max caratteri.',
+            'price.required' => 'Il campo ":attribute" deve essere riempito.',
+            'price.max' => 'Il campo ":attribute" può avere una lunghezza massima di :max caratteri.',
+            'series.required' => 'Il campo ":attribute" deve essere riempito.',
+            'series.max' => 'Il campo ":attribute" può avere una lunghezza massima di :max caratteri.',
+            'sale_date.required' => 'Il campo ":attribute" deve essere riempito.',
+            'type.required' => 'Il campo ":attribute" deve essere riempito.',
+            'type.max' => 'Il campo ":attribute" può avere una lunghezza massima di :max caratteri.',
+            'artists.required' => 'Il campo ":attribute" deve essere riempito.',
+            'artists.max' => 'Il campo ":attribute" può avere una lunghezza massima di :max caratteri.',
+            'writers.required' => 'Il campo ":attribute" deve essere riempito.',
+            'writers.max' => 'Il campo ":attribute" può avere una lunghezza massima di :max caratteri.',
         ])->validate();
     }
 }
